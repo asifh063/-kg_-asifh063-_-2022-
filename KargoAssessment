@@ -8,6 +8,10 @@ public class KargoAssessment {
 		int n = s1.length(); // length of first string
 		int m = s2.length(); // length of second string
 		
+		if(n!=m) { // unequal length of both the strings 
+			return false;
+		}
+		
 		for(int i = 0;i < n;i++){
 			char c1 = s1.charAt(i); 
 			char c2 = s2.charAt(i); 
